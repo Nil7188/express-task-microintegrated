@@ -1,0 +1,35 @@
+{
+  "info": {
+    "_postman_id": "fb0b2a08-fe7f-4ea0-a726-e31984e37df3",
+    "name": "micro integrated",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47449960",
+    "_collection_link": "https://go.postman.co/collection/47449960-fb0b2a08-fe7f-4ea0-a726-e31984e37df3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "orderapi",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "getorder",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "userapi",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}

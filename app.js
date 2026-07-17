@@ -7,13 +7,18 @@ const app= express();
 
 app.use(cors());
 app.use(express.json());
-app.use("/api", orderRoutes);
-app.use("/api", userRoutes);
+
+
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "Express Task API is running successfully"
+    message: "Express Task API is Running Successfully 🚀"
   });
 });
+
+
+app.use("/api", orderRoutes);
+app.use("/api", userRoutes);
+
 
 module.exports= app;

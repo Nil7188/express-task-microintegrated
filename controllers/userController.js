@@ -72,9 +72,15 @@ exports.validateUser = async (req, res) => {
     });
 
   } catch (error) {
-    return res.status(500).json({
-      success: false,
-      message: error.message
-    });
-  }
+  console.error("Validate User Error:", error);
+
+  return res.status(500).json({
+    success: false,
+    message: error.message || "Unknown error",
+    code: error.code,
+    sqlMessage: error.sqlMessage,
+    sqlState: error.sqlState,
+    stack: process.env.NODE_ENV !== "production" ? error.stack : undefined
+  });
+}
 };
